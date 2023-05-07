@@ -1,0 +1,10 @@
+# Calls aws_start.py with the first argument
+# Example: aws-start gpu-1
+# Simply calls: python aws_start.py --name gpu-1
+# This script is used by the AWS console to start instances
+
+# Get the name of the instance to start
+name=$1
+
+# Call the python script
+python ./aws_start.py --name $name

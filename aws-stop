@@ -1,0 +1,7 @@
+# Similar to aws-start but to stop an EC2 instance
+
+# Get the name of the instance to stop
+name=$1
+
+# Call the python script
+python ./aws_stop.py --name $name
